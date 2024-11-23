@@ -17,6 +17,5 @@ public class duplicate {
    for (Map.Entry<Character, Integer> entry : hm.entrySet()) {
     System.out.println("Character: " + entry.getKey() + ", Count: " + entry.getValue());
 }
-
     }
 }
