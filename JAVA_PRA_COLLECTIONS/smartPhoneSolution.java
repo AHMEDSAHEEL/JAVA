@@ -4,6 +4,8 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class smartPhoneSolution {
 
@@ -54,6 +56,11 @@ public class smartPhoneSolution {
     }
 
     public static ArrayList<smartPhone> findByBrandName(ArrayList<smartPhone> al,String brandName){
+
+        //   return (ArrayList<smartPhone>) al.stream()
+        //         .filter(h-> h.getBrandName().equals(brandName))
+        //         .collect(Collectors.toList());
+                
        ArrayList<smartPhone>ans=new ArrayList<>();
 
        for(smartPhone sm:al){

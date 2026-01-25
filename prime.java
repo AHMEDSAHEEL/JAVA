@@ -6,7 +6,7 @@ public class prime {
         // System.out.println(n+" is "+isPrime);
 
         for(int i=2;i<100;i++){
-            boolean isPrime=isPrime(i);
+            String isPrime=isPrime(i)?"Prime":"Not Prime";
             System.out.println(i+" is "+isPrime);
         }
 

@@ -3,7 +3,7 @@ import java.util.*;
 public class duplicate {
     public static void main(String[] args) {
         String str="Ahmed Saheel";
-        HashMap<Character,Integer>hm=new HashMap<>();
+        TreeMap<Character,Integer>hm=new TreeMap<>();
 
         for(char c: str.toCharArray()){
             if(hm.containsKey(c)){
