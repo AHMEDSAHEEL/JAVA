@@ -1,6 +1,7 @@
 package JAVA_PRA_EXCEPTION;
 
 import java.util.*;
+
 public class palindromeException
 {
 	public static void main(String[] args) {
@@ -18,11 +19,11 @@ public class palindromeException
 	      String rev=palindrome(str);
 	       try{
 	         if(rev.equals(str)){
-	           throw new PalindromeException("Number is Palindrome");   
+	           throw new PalindromeExceptions("Number is Palindrome");   
 	         }else{
 	          System.out.println(rev);
 	         }
-	        }catch(PalindromeException e){
+	        }catch(PalindromeExceptions e){
 	          System.out.println(e.getClass().getSimpleName()+": "+e.getMessage());
 	        }
 	  }
@@ -36,8 +37,8 @@ public class palindromeException
 	    return res;
 	}
 }
-class PalindromeException extends Exception{
-    public PalindromeException(String msg){
+class PalindromeExceptions extends Exception{
+    public PalindromeExceptions(String msg){
         super(msg);
     }
 }
