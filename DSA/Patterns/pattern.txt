@@ -1,0 +1,107 @@
+PATTERNS:
+Mosty nested loop
+
+step1.for outer lines be rows
+step2. for inner lines  be columns and connect with rows
+step3.print them (eg:*) inside the inner for loop
+
+eg1:
+
+*****
+*****
+*****
+*****
+*****
+
+step1 : count outer lines
+*
+*
+*
+*
+* so total 5
+
+step2: connect with rows:
+1st row 5times
+1=5
+2=5
+3=5
+4=5
+5=5
+step print '*';goto pattern_1.java file run pattern1 method
+
+
+eg2:
+
+
+*
+**
+***
+****
+*****
+step1 : count outer lines
+*
+*
+*
+*
+* so total 5
+
+step2: connect with rows:
+1st row 5times
+1=1
+2=2
+3=3
+4=4
+5=5,  so j<=i
+step print '*';goto pattern_1.java file run pattern_2 method
+
+eg3:
+
+
+1
+12
+123
+1234
+12345
+step1 : count outer lines
+1
+1
+1
+1
+1 so total 5
+
+step2: connect with rows:
+1st row 5times
+1=1
+2=2
+3=3
+4=4
+5=5,  so j<=i
+step print '*';goto pattern_1.java file run pattern_3 method
+
+
+eg4:
+
+
+*****
+****
+***
+**
+*
+step1 : count outer lines
+*
+*
+*
+*
+* so total 5
+
+step2: connect with rows:
+1st row 5times
+1=5 (5-1+1)
+2=4  (5-2+1)
+3=3  (5-3+1)
+4=2  (5-4+1)
+5=1,  so j=n-i+1 
+step print '*';goto pattern_1.java file run pattern_5 method
+
+
+
