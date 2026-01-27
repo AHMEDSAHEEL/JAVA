@@ -8,7 +8,7 @@ public class pattern_1 {
         int n=s.nextInt();
         //pattern1(n);
          //pattern_2(n);
-         pattern_5(n);
+         pattern_6(n);
         System.out.println("Continue: ");
          ans=s.next().charAt(0);
         }while(ans=='y');
@@ -51,6 +51,44 @@ public class pattern_1 {
             for(int j=1;j<=n-i+1;j++){
                 System.out.print("*");
             }
+            System.out.println();
+        }
+    }
+    public static void pattern_6(int n){
+        int space=2*n-2;
+        int limit=2*n-1;
+        for(int i=1;i<=limit;i++){
+
+           if(i<=n){  
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+             if(i<n){
+            for(int j=1;j<=space;j++){
+                System.out.print(" ");
+               
+            }
+          
+             space-=2;}
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+        }else{
+              space+=2;
+             // System.out.println(space);
+                for(int j=1;j<=2*n-i;j++){
+                System.out.print("*");
+            }
+           
+            for(int j=1;j<=space;j++){
+                System.out.print(" ");
+                
+            }
+            for(int j=1;j<=2*n-i;j++){
+                System.out.print("*");
+            }
+        }
             System.out.println();
         }
     }
