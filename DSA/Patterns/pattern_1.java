@@ -9,7 +9,7 @@ public class pattern_1 {
         //pattern1(n);
          //pattern_2(n);
          pattern_6(n);
-        System.out.println("Continue: ");
+        System.out.println("Do you want to Continue: ");
          ans=s.next().charAt(0);
         }while(ans=='y');
         s.close();
@@ -56,39 +56,32 @@ public class pattern_1 {
     }
     public static void pattern_6(int n){
         int space=2*n-2;
-        int limit=2*n-1;
-        for(int i=1;i<=limit;i++){
+        int limit=0;
+        for(int i=1;i<=2*n-1;i++){
 
-           if(i<=n){  
-            for(int j=1;j<=i;j++){
+           if(i>n){  
+            limit=2*n-i;
+           }
+           else{
+            limit=i;
+           }
+            for(int j=1;j<=limit;j++){
                 System.out.print("*");
             }
-             if(i<n){
+             
             for(int j=1;j<=space;j++){
                 System.out.print(" ");
                
             }
-          
-             space-=2;}
-            for(int j=1;j<=i;j++){
+            for(int j=1;j<=limit;j++){
                 System.out.print("*");
             }
-
-        }else{
-              space+=2;
-             // System.out.println(space);
-                for(int j=1;j<=2*n-i;j++){
-                System.out.print("*");
-            }
-           
-            for(int j=1;j<=space;j++){
-                System.out.print(" ");
-                
-            }
-            for(int j=1;j<=2*n-i;j++){
-                System.out.print("*");
-            }
-        }
+         if(i<n){
+            space-=2;
+         }else{
+            space+=2;
+         }
+        
             System.out.println();
         }
     }
