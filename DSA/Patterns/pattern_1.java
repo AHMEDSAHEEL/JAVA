@@ -9,7 +9,7 @@ public class pattern_1 {
         //pattern1(n);
          //pattern_2(n);
          pattern_6(n);
-        System.out.println("Do you want to Continue: ");
+        System.out.println("Do you want to Continue the Pattern: ");
          ans=s.next().charAt(0);
         }while(ans=='y');
         s.close();
