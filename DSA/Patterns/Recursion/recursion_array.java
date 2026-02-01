@@ -5,15 +5,17 @@ public class recursion_array {
 
     public static void main(String[] args) {
 
-        reverseArrDP(0, arr.length - 1); // double pointer
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        reverseArrSP(0);
-        System.out.println();// double pointer
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
+        // reverseArrDP(0, arr.length - 1); // double pointer
+        // for (int i : arr) {
+        //     System.out.print(i + " ");
+        // }
+        // reverseArrSP(0);  // single pointer
+        // System.out.println();
+        // for (int i : arr) {
+        //     System.out.print(i + " ");
+        // }
+        System.out.println(fibi(5));
+
     }
 
     public static void reverseArrDP(int left, int right) {
@@ -38,6 +40,17 @@ public class recursion_array {
         arr[n - i - 1] = temp;
 
         reverseArrSP(i + 1);
+    }
+
+    public static int fibi(int n){
+        if(n==0){
+            return 0;
+        }
+        if(n==1){
+            return 1;
+        }
+
+        return fibi(n-1)+fibi(n-2);
     }
 
 }
